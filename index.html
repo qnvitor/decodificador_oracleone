@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="matrix"></div>
+    <div class="container">
+        <h1>Criptografia de Textos</h1>
+        <textarea id="inputTexto" placeholder="Digite o texto aqui..."></textarea>
+        <div class="buttons">
+            <button onclick="criptografarTexto()">Criptografar</button>
+            <button onclick="descriptografarTexto()">Descriptografar</button>
+        </div>
+        <textarea id="outputTexto" placeholder="Resultado..." readonly></textarea>
+        <button class="copy-button" onclick="copiarTexto()">Copiar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

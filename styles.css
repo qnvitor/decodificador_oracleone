@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #333;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    background-color: #666666;
+    padding: 30px 50px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f87;
+}
+
+.copy-button {
+    background-color: #008CBA;
+}
+
+.copy-button:hover {
+    background-color: #005f87;
+}
+
+.matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.matrix span {
+    position: absolute;
+    color: #00ff00;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    user-select: none;
+    white-space: nowrap;
+    animation: rain 5s linear infinite;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
